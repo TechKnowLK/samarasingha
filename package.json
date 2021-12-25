@@ -1,0 +1,30 @@
+{
+  "name": "kingamda",
+  "version": "2.0.0",
+  "description": "❤️King Amda is a POWERFULL Whatsapp Userbot helping to improve your Whatsapp experience.",
+  "main": "./ales/bot.js",
+  "scripts": {
+    "start": "supervisor -s bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kingamdabota/KingAmda-v2.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "asena",
+    "WhatsAsena"
+  ],
+  "author": "42Set Eka Team Work / Pasindu Samarasingha",
+  "developer": "42Set Eka Team Work / Pasindu Samarasingha",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Kingamdabota/KingAmda-v2/issues"
+  },
+  "homepage": "https://github.com/Kingamdabota/KingAmda-v2#readme",
+  "dependencies": {
+    "kingamda-npm": "^0.0.6"  
+  }
+}
