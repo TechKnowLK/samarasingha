@@ -112,7 +112,7 @@ Kingamda.addCommand({ pattern: 'fb ?(.*)', fromMe: tk, deleteCommand: false, des
         if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://api.dapuhy.ga/api/socialmedia/snapsave?url=${link}&apikey=xxaCRjUYbu`)
+          .get(`https://api.dapuhy.xyz/api/socialmedia/snapsave?url=${link}&apikey=xxaCRjUYbu`)
           .then(async (response) => {
             const {hd} = response.data.result
             const videoBuffer = await axios.get(hd, {responseType: 'arraybuffer'})
