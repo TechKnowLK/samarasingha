@@ -99,7 +99,7 @@ module.exports = {
     TOXIC_P: process.env.TOXIC_P === undefined ? 'photoxy/' : process.env.TOXIC_P, 
     TOXIC_T: process.env.TOXIC_T === undefined ? 'textpro/' : process.env.TOXIC_T,
     DECODE: process.env.DECODE === undefined ? 'KINGAMDA-VIP-API' : process.env.DECODE,
-    SITE1: process.env.SITE1 === undefined ?'https://api.dapuhy.ga/api/' : process.env.SITE1,
+    SITE1: process.env.SITE1 === undefined ?'https://api.dapuhy.xyz/api/' : process.env.SITE1,
     FBS2: process.env.FBS2 === undefined ?'snapsave?url' : process.env.FBS2,
     BAPIS: process.env.BAPIS === undefined ?'https://bx-hunter.herokuapp.com/api/' : process.env.BAPIS,
     JAPIS: process.env.JAPIS === undefined ?'https://docs-jojo.herokuapp.com/api/' : process.env.JAPIS,
