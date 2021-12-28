@@ -74,7 +74,7 @@ if (!word) return await message.sendMessage(" *Please Input Word* ")
 await message.sendMessage('👻 *Text Converting* 🕊')
 
 await axios
-      .get(`https://api.dapuhy.ga/api/others/styletext?text=${word}&apikey=Ar6P0HIGXxTwAfu`)
+      .get(`https://api.dapuhy.xyz/api/others/styletext?text=${word}&apikey=Ar6P0HIGXxTwAfu`)
       .then(async (response) => {
         const {
          result,
