@@ -52,7 +52,7 @@ const tk = Config.WORKTYPE == 'public' ? false : true
         if (!link) return await message.client.sendMessage(message.jid,IG_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_VID,MessageType.text);
         await axios
-          .get(`https://api.dapuhy.ga/api/socialmedia/igdownload?url=${link}${samare.KEY}${samare.GAAPI}`)
+          .get(`https://api.dapuhy.xyz/api/socialmedia/igdownload?url=${link}${samare.KEY}${samare.GAAPI}`)
           .then(async (response) => {
             const {download_url} = response.data.result
             const videoBuffer = await axios.get(download_url, {responseType: 'arraybuffer'})
@@ -73,7 +73,7 @@ const tk = Config.WORKTYPE == 'public' ? false : true
           if (!link) return await message.client.sendMessage(message.jid,IG_NEED,MessageType.text)
           await message.client.sendMessage(message.jid,DWLOAD_IMG,MessageType.text);
           await axios
-            .get(`https://api.dapuhy.ga/api/socialmedia/igdownload?url=${link}${samare.KEY}${samare.GAAPI}`)
+            .get(`https://api.dapuhy.xyz/api/socialmedia/igdownload?url=${link}${samare.KEY}${samare.GAAPI}`)
             .then(async (response) => {
               const {download_url} = response.data.result
               const videoBuffer = await axios.get(download_url, {responseType: 'arraybuffer'})
