@@ -345,7 +345,7 @@ Kingamda.addCommand({ pattern: 'gimg ?(.*)', fromMe: tk, deleteCommand: false, d
         if (!link) return await message.client.sendMessage(message.jid,MessageType.text)
         
         await axios
-          .get(`https://api.dapuhy.ga/api/search/googleimage?query=${link}&apikey=Ar6P0HIGXxTwAfu`)
+          .get(`https://api.dapuhy.xyz/api/search/googleimage?query=${link}&apikey=Ar6P0HIGXxTwAfu`)
           .then(async (response) => {
             const {image} = response.data
             const profileBuffer = await axios.get(image, {responseType: 'arraybuffer'})
