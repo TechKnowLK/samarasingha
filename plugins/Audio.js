@@ -45,7 +45,7 @@ let tn = Config.WORKTYPE == 'public' ? false: true
         if (!link) return await message.client.sendMessage(message.jid,YT_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,DWLOAD_AUD,MessageType.text);
         await axios
-          .get(`https://api.dapuhy.ga/api/socialmedia/ytmp3v2?url=${link}&apikey=xxaCRjUYbu`)
+          .get(`https://api.dapuhy.xyz/api/socialmedia/ytmp3v2?url=${link}&apikey=xxaCRjUYbu`)
           .then(async (response) => {
             const {
               link,
