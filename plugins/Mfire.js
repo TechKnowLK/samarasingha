@@ -44,7 +44,7 @@ let tn = Config.WORKTYPE == 'public' ? false : true
         if (!link) return await message.client.sendMessage(message.jid,M_NEED,MessageType.text)
         await message.client.sendMessage(message.jid,M_D,MessageType.text);
         await axios
-          .get(`https://api.dapuhy.ga/api/socialmedia/mediafire?url=${link}${pasindu.KEY}${pasindu.GAAPI}`)
+          .get(`https://api.dapuhy.xyz/api/socialmedia/mediafire?url=${link}${pasindu.KEY}${pasindu.GAAPI}`)
           .then(async (response) => {
             const {
               link,
