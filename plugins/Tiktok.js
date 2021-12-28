@@ -43,7 +43,7 @@ let typeb = Amda.WORKTYPE == 'public' ? true : false
 
     await message.sendMessage(Lang.DOWNLOADING_VIDEO)
 
-		var url = `https://api.dapuhy.ga/api/socialmedia/ttdownloader?url=${link}&apikey=xxaCRjUYbu` 
+		var url = `https://api.dapuhy.xyz/api/socialmedia/ttdownloader?url=${link}&apikey=xxaCRjUYbu` 
 // උස්සන්න එපා
 				await axios
 					.get(`${url}`)
@@ -80,7 +80,7 @@ if (Amda.WORKTYPE == 'public') {
   
 	  await message.sendMessage(Lang.DOWNLOADING_VIDEO)
   
-		  var url = `https://api.dapuhy.ga/api/socialmedia/ttdownloader?url=${link}&apikey=xxaCRjUYbu` 
+		  var url = `https://api.dapuhy.xyz/api/socialmedia/ttdownloader?url=${link}&apikey=xxaCRjUYbu` 
   // උස්සන්න එපා
 				  await axios
 					  .get(`${url}`)
