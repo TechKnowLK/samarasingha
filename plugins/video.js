@@ -157,7 +157,7 @@ var i = Math.floor(60*Math.random())
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);
         await message.client.sendMessage(message.jid,Config.SONGD,MessageType.text);
         await axios
-          .get(`${pasindu.LOCKH}${pasindu.BSITE}/api/socialmedia/ytplaymp3v2?query=${link}${pasindu.KEY}${pasindu.GAAPI}`) 
+          .get(`${pasindu.LOCKH}${pasindu.BSITE}/api/socialmedia/ytplaymp3?query=${link}${pasindu.KEY}${pasindu.GAAPI}`) 
           .then(async (response) => {
             const {url} = response.data
             const videoBuffer = await axios.get(url, {responseType: 'arraybuffer'})
