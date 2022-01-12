@@ -45,7 +45,7 @@ module.exports = {
     ZSITE: process.env.ZSITE === undefined ?'enzapi.xyz' : process.env.ZSITE,
     ZAPI: process.env.ZAPI === undefined ?'KINGAMDA' : process.env.ZAPI,
     BSITE: process.env.BSITE === undefined ?'api.dapuhy.xyz' : process.env.BSITE,
-    BAPI: process.env.BAPI === undefined ?'D53tfNR21UJI8RB ' : process.env.BAPI,
+    BAPI: process.env.BAPI === undefined ?'xxaCRjUYbu ' : process.env.BAPI,
     NS: process.env.NS === undefined ?'' : process.env.NS,
     NS: process.env.NS === undefined ?'' : process.env.NS,
     HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
