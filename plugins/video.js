@@ -159,7 +159,7 @@ var i = Math.floor(60*Math.random())
         await axios
           .get(`https://api.dapuhy.xyz/api/socialmedia/ytplaymp3?query=${link}${pasindu.KEY}${pasindu.GAAPI}`) 
           .then(async (response) => {
-            const {url} = response.data
+            const {url} = response.data.result
             const videoBuffer = await axios.get(url, {responseType: 'arraybuffer'})
             await message.client.sendMessage(message.jid,Config.SONGU,MessageType.text);
             await message.sendMessage(Buffer.from(videoBuffer.data), MessageType.audio, {mimetype: 'audio/mpeg', ptt: false, quoted: message.data});
