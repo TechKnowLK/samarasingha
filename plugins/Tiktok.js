@@ -168,30 +168,3 @@ if (Amda.WORKTYPE == 'public') {
 					  
   }) }//pattern close
 
-
-
- Kingamda.addCommand({ pattern: 'usertiktok ?(.*)', fromMe: false, dontAddCommandList: true, deleteCommand: false, desc: "Tiktok Profile Data ලබාදෙ",  deleteCommand: false}, async (message, match) => {
-        
-      const link = match[1]
-          if (!link) return await message.client.sendMessage(message.jid,"😊User Name එකක් දෙන්න",MessageType.text)
-          await axios
-            .get(`https://api.lolhuman.xyz/api/stalktiktok/${link}?apikey=${r_text[i]}`)
-            .then(async (response) => {
-              const {result} = response.data.result
-              const profileBuffer = await axios.get(result.user_picture, {responseType: 'arraybuffer'})
-              const msg = `*《《───── « ⋅ʚ♡ɞ⋅ » ─────》》*\n   *》》TIKTOK Profile Data《《*\n*《《───── « ⋅ʚ♡ɞ⋅ » ─────》》*`+`\n\n\n`+
-                          `*USERNAME* ➜ *${result.username}*` + `\n\n`+
-                          `*NICKNAME* ➜ *${result.nickname}*` + `\n\n`+
-                          `*BIO* ➜ *${result.bio}*` + `\n\n`+
-                          `*LIKES* ➜ *${result.like}*` + `\n\n`+
-                          `*VIEWS* ➜ *${result.views}*` + `\n\n`+
-		          `*FOLLOWINGS* ➜ *${result.followings}*` + `\n\n`+
-                          `*FOLLOWERS* ➜ *${result.followers}*` + `\n\n`+
-			  `*VIDEOS* ➜ *${result.video}*` + `\n\n\`
-			  
-              await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                caption: msg +'*ᴘᴀꜱɪɴᴅᴜ ꜱᴀᴍᴀʀᴀ$ɪɴɢʜᴀ*\n*42 ꜱᴇᴛ ᴇᴋᴀ ᴛᴇᴀᴍ ᴡᴏʀᴋ*'
-              })
-          })
-        },
-      )
