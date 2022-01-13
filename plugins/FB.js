@@ -115,7 +115,7 @@ Kingamda.addCommand({ pattern: 'fb ?(.*)', fromMe: tk, deleteCommand: false, des
           .get(`https://api.dapuhy.xyz/api/socialmedia/snapsave?url=${link}&apikey=${pasindu.GAAPI}`)
           .then(async (response) => {
             const {result} = response.data
-            const videoBuffer = await axios.get(result.hd, {responseType: 'arraybuffer'})
+            const videoBuffer = await axios.get(result.preview, {responseType: 'arraybuffer'})
             await message.client.sendMessage(message.jid,YTV_UP,MessageType.text);
             await message.sendMessage(Buffer.from(videoBuffer.data), MessageType.video, {
               caption: "*ඇම්ඩා තමයි හොදටම කරෙ🤪*",
